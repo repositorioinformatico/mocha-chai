@@ -18,3 +18,10 @@ describe("Calcultator tests using ASSERT interface from CHAI module: ", function
  }); 
 });
 
+describe("Testeando los returns de las funciones", function() {
+//Podemos no usar el wrapper describe()
+it("Debe existir un método saluda() que devuelve string hola", function() {
+result = calculator.saluda();
+assert.equal(result, "hola");
+});
+});
